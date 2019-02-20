@@ -18,6 +18,7 @@
 #include <cryptopp/osrng.h>
 #include <cryptopp/xed25519.h>
 #include <cryptopp/files.h>
+#include <cryptopp/base64.h>
 
 
 using cucumber::ScenarioScope;
@@ -26,7 +27,9 @@ using namespace std;
 class KeySteps {
 public:
 	string privateKeyFilename;
+	string publicKeyFilename;
 	CryptoPP::ed25519PrivateKey privateKey;
+	CryptoPP::ed25519PublicKey publicKey;
 };
 
 #endif /* TESTS_FEATURES_STEP_DEFINITIONS_KEYSTEPS_H_ */
