@@ -11,4 +11,5 @@ endfunction()
 # add cpp files to the CucumberStepsServer executable
 add_cucumber_executable(
 	step_definitions/KeySteps
+	step_definitions/SignatureSteps
 )
