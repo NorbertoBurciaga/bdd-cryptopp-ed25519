@@ -57,7 +57,7 @@ THEN("^a signature for ([^\"]*) should be created$") {
 		)
 	);
 
-	// display messge, and signature base64 encoded
+	// display message, and signature base64 encoded
 	CryptoPP::Base64Encoder encoder(new CryptoPP::FileSink(std::cout),false);
 	cout << endl << "Message: " << message << endl << "Signature: " << endl;
 	CryptoPP::StringSource(signature, true, new CryptoPP::Redirector(encoder));
