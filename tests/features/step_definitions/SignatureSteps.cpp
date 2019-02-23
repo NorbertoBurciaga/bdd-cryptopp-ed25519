@@ -58,13 +58,14 @@ THEN("^a signature for ([^\"]*) should be created$") {
 	);
 
 	// display messge, and signature base64 encoded
-/*	CryptoPP::Base64Encoder encoder(new CryptoPP::FileSink(std::cout),false);
+	CryptoPP::Base64Encoder encoder(new CryptoPP::FileSink(std::cout),false);
 	cout << endl << "Message: " << message << endl << "Signature: " << endl;
 	CryptoPP::StringSource(signature, true, new CryptoPP::Redirector(encoder));
 	cout << endl << "Public Key:" << endl;
 	CryptoPP::Base64Encoder encoder1(new CryptoPP::FileSink(std::cout),false);
 	context->verifier->GetPublicKey().Save(encoder1);
-	std::cout << "\n" << std::endl;*/
+	encoder1.MessageEnd();
+	std::cout << "\n" << std::endl;
 
 	// Verify signature of the message
 	CryptoPP::StringSource(signature+message, true,

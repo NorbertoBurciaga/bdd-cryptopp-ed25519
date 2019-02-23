@@ -19,6 +19,6 @@ Scenario Outline: Verify signatures
 	Examples:
 	| message                                    | signature                                                                                | public_key                                                   |
 	| Hello World!                               | Wco3F+W0r59dv2jigjt7RvZYHmoI/ncwkryTV3NtsDQOpw8aQcJK1XEWjG1tEapg9Ato7we8n+PFXk+warb3CQ== | MCowBQYDK2VwAyEAMIln+WHCa/M/HUjOjiSDdICkfmLpgV418ae3I2TgdIQ= |
-	| This is another message                    | s4NxocipG2rzkrz9N/xi6tNKhr657pRMbbA05bz9l/gCCKT34Nc4tBOGeoE1PDbNMROwfwIvzAdrSf2FraM2Aw== | MCowBQYDK2VwAyEAMIln+WHCa/M/HUjOjiSDdICkfmLpgV418ae3I2TgdIQ= |
-	| Luke...I am...your father......Noooohhhh!! | istSmvPZ0FFaJCOQDEmDrWKTI4qL0Ez8rtmQvmJ7+u9BuzXIzPsrF+f8iAoPLXSySQkryAQwW+BsDLV6I58jCw== | MCowBQYDK2VwAyEAMIln+WHCa/M/HUjOjiSDdICkfmLpgV418ae3I2TgdIQ= |
-	| Yoda said, Do or do not. There is no try.  | OWdLCp9iljSKp34sDtl23UDUUX75CYNmR17nIMbzhJXAYTCJW/BWqXofjZf1oBshhKEUtCynOZXlZT8WRhV3AA== | MCowBQYDK2VwAyEAMIln+WHCa/M/HUjOjiSDdICkfmLpgV418ae3I2TgdIQ= |
+	| This is another message                    | T5ui0OP7ynwHzIAvNVTF72sAStGRsQ8TJcTUKhr1mzv7kJvPpH3+Sp59zzMfqoJWZeXknCwe+x1qoP3Dxz66CQ== | MCowBQYDK2VwAyEAE3SEBBcbpc/UMuKnJVOY9yladFlarHoKgga7Mv9i8wc= |
+	| Luke...I am...your father......Noooohhhh!! | 69yppm2lB2KzQyJqW03gRS0G+ldubAe3BJVJAp8nxTKiezsUWv6eqdiytMVPzvXEQ6m9K9s6Hohj6qDn66GQAA== | MCowBQYDK2VwAyEAnidHjUYZGsdCYmUSnfRDie1egnW/4cNa2YjscumtdBo= |
+	| Yoda said, Do or do not. There is no try.  | 5ke0fcF0TfZ2DsPEf/X2iVOZ6CjXg0X5dsplEJlBV5Kak9+whXIPyuWggHyPceNNDZ80MwuK+mhgtUaKBMd8Bg== | MCowBQYDK2VwAyEA3fqIDX1hAFFpAsNKpcOLqf+JJU7TLjTyIj/XNZbPs4Q= |
