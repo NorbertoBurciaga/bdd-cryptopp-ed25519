@@ -68,13 +68,13 @@ WHEN("^loading the private key$") {
 
 THEN("^an ed25519 public key should be generated and stored in base64 format$") {
 	ScenarioScope<KeySteps> context;
-	CryptoPP::Base64Encoder encoder(new CryptoPP::FileSink(context->publicKeyFilename.c_str()));
+	CryptoPP::Base64Encoder encoder(new CryptoPP::FileSink(context->publicKeyFilename.c_str()),false /*line breaks*/);
 
 	try {
 		context->verifier = new CryptoPP::ed25519::Verifier(context->signer);
 
 		context->verifier->GetPublicKey().Save(encoder);
-
+		encoder.MessageEnd();
 
 	} catch(const CryptoPP::Exception& e) {
 		std::cerr << "Crypto Error: " << e.what() << std::endl;
