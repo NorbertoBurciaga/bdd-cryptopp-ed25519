@@ -63,6 +63,7 @@ $ sudo apt install git-all gcc g++ flex bison make autoconf automake libtool aut
 #### Install CMake
 
 Download .._x86_64.sh file from: https://cmake.org/files/LatestRelease/
+
 $ chmod +x the downloaded file:
 
 ```console 
@@ -169,6 +170,8 @@ $ cp "$PWD/cmake/CMakeLists.txt" "$PWD"
 [Contents](#contents)
 
 ### Testing
+
+to run tests a shell script was created in the tests folder. It compiles, and runs the cucumber server in its own process, later on executes cucumber to test the steps of each scenario defined in each feature.
 
 ```console
 $ git clone https://github.com/NorbertoBurciaga/bdd-cryptopp-ed25519.git
